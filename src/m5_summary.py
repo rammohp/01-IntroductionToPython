@@ -2,12 +2,14 @@
 An exercise that summarizes what you have learned in this Session.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Praveen Rammohan.
 """
+
 ########################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
+
 
 ########################################################################
 # TODO: 2.
@@ -27,3 +29,19 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #   As always, COMMIT-and-PUSH when you are done with this module.
 #
 ###############################################################################
+
+import rosegraphics as rg
+
+window = rg.TurtleWindow()
+window.delay(20)
+
+tom = rg.SimpleTurtle()
+tom.pen = rg.Pen('red', 15)
+
+tom.forward(100)
+tom.right(90)
+tom.backward(70)
+
+window.close_on_mouse_click()
+
+
